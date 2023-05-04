@@ -268,7 +268,6 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
   color: var(--main-color);
 }
 .blog-home-item-category .section-header,
@@ -283,7 +282,7 @@
 .blog-home-item-category-list li {
   border-bottom: 1px solid var(--border-color);
   font-size: 0;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .blog-home-item-category-list li:nth-child(1) {
   border-top: 1px solid var(--border-color);
