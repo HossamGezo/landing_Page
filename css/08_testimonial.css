@@ -1,0 +1,45 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.08 Testimonail   
+^^^^^^^^^^^^^^^^^^^^
+*/
+.testimonial {
+  position: relative;
+  background-image: url(../images/background/background3.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.testimonail-content {
+  padding: 120px 0;
+  width: 70%;
+  margin: auto;
+}
+.testimonail-item {
+  width: 50%;
+  float: left;
+  color: white;
+}
+.testimonail-toplayer {
+  padding: 10px 0 10px 100px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.testimonail-toplayer img {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  border-radius: 50%;
+}
+.testimonail-toplayer h2 {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.testimonail-toplayer span {
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.testimonail-desc {
+  line-height: 1.8;
+  font-size: 17px;
+}

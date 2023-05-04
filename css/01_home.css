@@ -1,0 +1,50 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.01 Home
+^^^^^^^^^^^^^^^^^^^^
+*/
+.home {
+  height: 100vh;
+  background-image: url("../images/background/background1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.home-content {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 65%;
+}
+.home-content .title {
+  color: white;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.home-content .home-desc {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+.home-content .btn {
+  min-width: 160px;
+  padding: 15px 0;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.home-content .btn-start {
+  margin-right: 18px;
+  background-color: white;
+} 
+.home-content .btn-learn {
+  background-color: var(--main-color);
+  color: white;
+}

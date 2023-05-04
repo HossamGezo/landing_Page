@@ -1,0 +1,144 @@
+/* 
+------------------------------------------------------
+                    STYLE SHEET INDEX
+                    _________________
+  1. General Styling
+  2. Common  Styling
+  3. Sections
+    3.00 Header      Section
+    3.01 Home        Section
+    3.02 About       Section
+    3.03 Portfolio   Section
+    3.04 offer       Section
+    3.05 services    Section
+    3.06 Numbers     Section
+    3.07 Pricing     Section
+    3.08 Testimonail Section
+    3.09 Team        Section
+    3.10 Blog        Page
+    3.11 Contact     Section
+    3.12 Footer      Section
+------------------------------------------------------
+ */
+/*
+-------------------------------------
+    1. General Styling
+      - Universal Selector
+      - Root 
+      - Body & Button Font Family
+      - Headings Font Family
+      - Ul Style
+      - a  Style
+      - Container Class
+      - Clear     Class
+------------------------------------- 
+*/
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #6195FF;
+  --secondary-color: #999999;
+  --border-color: #e8e8e8;
+  --section-background: #f8f8f8;
+}
+body, button {
+  font-family: 'Varela Round', sans-serif;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.clear {
+  clear: both;
+}
+/*
+-------------------------------------
+2. Common Styling
+- overlay
+- opacity hover
+- section header
+- Section Padding
+- hover   effect 1 ( left to right  )
+- hover   effect 2 ( top  to bottom )
+------------------------------------- 
+*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hover-opacity {
+  transition: opacity 0.5s linear;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.section-header {
+  text-align: center;
+}
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.line {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: var(--main-color);
+  margin-bottom: 72px;
+}
+.pd-y {
+  padding: 120px 0;
+}
+.ltr-effect, .ttb-effect {
+  position: relative;
+} 
+.ltr-effect::after, .ttb-effect::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.ltr-effect::after {
+  width: 0;
+  transition: width 0.5s linear;
+}
+.ttb-effect::after {
+  height: 0;
+  transition: height 0.5s linear;
+}
+.ltr-effect:hover::after {
+  width: 100%;
+}
+.ttb-effect:hover::after {
+  height: 100%;
+}

@@ -1,0 +1,48 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.10 Blog 
+^^^^^^^^^^^^^^^^^^^^
+*/
+.blog {
+  background-color: var(--section-background);
+}
+.blog-item {
+  width: 30%;
+  float: left;
+  background-color: #fff;
+}
+.blog-info {
+  padding: 20px;
+}
+.blog-item.mg {
+  margin: 0 5%;
+}
+.blog-item-img img {
+  width: 100%;
+}
+.blog-item-list {
+  margin: 30px 0;
+}
+.blog-item-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.blog-item-list li i {
+  color: var(--main-color);
+}
+.blog-item-list li span {
+  text-transform: capitalize;
+}
+.blog-item-title {
+  font-size: 20px;
+}
+.blog-item-desc {
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin: 15px 0;
+}
+.blog-item-link {
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 18px;
+}

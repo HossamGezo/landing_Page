@@ -1,0 +1,77 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.11 Contact 
+^^^^^^^^^^^^^^^^^^^^
+*/
+.contact-item {
+  width: 30%;
+  float: left;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 25px;
+}
+.contact-item.mg {
+  margin: 0 5%;
+}
+.contact-item-icon {
+  color: var(--main-color);
+}
+.contact-item-title {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+.contact-item-desc {
+  color: var(--secondary-color);
+}
+.contact-info {
+  text-align: center;
+}
+.contact-content input:focus,
+.contact-content textarea:focus {
+  border: 1px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+.contact-input {
+  margin: auto; 
+  width: 60%;
+  font-size: 0;
+}
+.contact-input input {
+  width: 49.5%;
+  padding: 20px;
+  text-transform: capitalize;
+  background-color: var(--section-background);
+  border-bottom: 3px solid var(--border-color);
+}
+.contact-input .left {
+  margin-right: 1%;
+}
+.contact-subject {
+  display: block;
+  width: 60%;
+  height: 30px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: var(--section-background);
+  border-bottom: 3px solid var(--border-color);
+}
+.contact-message {
+  display: block;
+  text-transform: capitalize;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  outline: none;
+  border: none;
+  background-color: var(--section-background);
+  border-bottom: 3px solid var(--border-color);
+  height: 150px;
+}
+.contact-button {
+  color: white;
+  padding: 15px 40px;
+  background-color: var(--main-color);
+  margin-top: 30px;
+  font-size: 18px;
+}

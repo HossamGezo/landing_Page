@@ -1,0 +1,95 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.00 Header
+^^^^^^^^^^^^^^^^^^^^
+*/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blog-header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+.header .container .logo {
+  width: 40%;
+  float: left;
+}
+.header .container .logo img {
+  width: 20%;
+  margin-top: 5px;
+}
+.header .container .nav {
+  width: 60%;
+  float: left;
+  text-align: center;
+}
+.header .nav li {
+  display: inline-block;
+}
+.header .nav li a {
+  color: white;
+  display: block;
+  padding: 30px 15px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.blog-header .nav li a {
+  color: #333333;
+}
+.header .nav .drobdown {
+  position: relative;
+}
+.header .nav .drobdown .fa {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 10px;
+  color: #ffffff;
+  transition: transform 0.2s linear;
+}
+.blog-header .nav .drobdown .fa {
+  color: #333333;
+}
+.header .nav .drobdown:hover .fa {
+  transform: rotate(-90deg);
+  top: calc(50% - 4.375px);
+}
+.header .nav .drobdown .drobdown-menu {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  top: 80%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+.header .nav .drobdown:hover .drobdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header .nav .drobdown .drobdown-menu a {
+  text-transform: none;
+  padding: 10px 0;
+}
+.header .nav > li > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 2px;
+  background-color: var(--main-color);
+  transition: width 0.3s linear;
+}
+.header .nav li .active::after {
+  width: 100%;
+}
+.header .nav li a:not(.active):hover::after {
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+/*
+^^^^^^^^^^^^^^^^^^^^
+      3.05 services    
+^^^^^^^^^^^^^^^^^^^^
+*/
+.services {
+  background-color: #f9f9f9;
+}
+.services-item {
+  width: 50%;
+  float: left;
+}
+.services-item .section-header {
+  text-align: left;
+}
+.services-item .section-header .section-title {
+  text-align: left;
+}
+.services-item-desc {
+  padding-right: 20px;
+  color: #999;
+  line-height: 1.6;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.services-item-list .item {
+  margin-bottom: 20px;
+  color: #999;
+}
+.services-item-list .item::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  margin-right: 10px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
+}
+.services-item-image img {
+  width: 100%;
+}
+.services-item-bollets {
+  text-align: center;
+  margin-top: 15px;
+}
+.services-item-bollets li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.5s linear;
+}
+.services-item-bollets li.active {
+  background-color: var(--main-color);
+}
+.services-item-bollets li:hover {
+  background-color: var(--main-color);
+}
