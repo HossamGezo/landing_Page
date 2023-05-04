@@ -291,7 +291,7 @@
   display: inline-block;
   text-transform: capitalize;
   width: 50%;
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
 }
 .blog-home-item-category-list li span:nth-child(2) {
